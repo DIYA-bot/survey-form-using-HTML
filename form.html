@@ -7,7 +7,7 @@
 </head>
 <body>
      <h1>Survey Form</h1>
-     <p>Take a survey and helps us to <i>make things <mark>more useful</mark></i></p>
+     <h3>Take a survey and helps us to <i>make things <mark>more useful</mark></i></h3>
      <form action="form">
           <label for="name">Your Name:</label>
           <input type="text" required placeholder="Diya Dutta">
@@ -26,6 +26,23 @@
                <option value="other">Other(Please specify)</option>
           </select>
           <br><br>
+          <label for="contactno">Your Contact Number</label>
+          <select name="countryCode" id="countryCode" >
+               <option value="+91">India(+91)</option>
+               <option value="+1">United States (+1)</option>
+               <option value="">United Kingdom (+44)</option>
+               <option value="+61">Australia (+61)</option>
+                <option value="+86">China (+86)</option>
+                <option value="+49">Germany (+49)</option>
+                <option value="+81">Japan (+81)</option>
+                <option value="+52">Mexico (+52)</option>
+                <option value="+7">Russia (+7)</option>
+                <option value="+27">South Africa (+27)</option>
+          </select>
+           <input type="tel" name="contactNo" id="contactNo." placeholder="9844898279">
+          <br><br>
+     <label for="mail">Your Email</label>
+     <input type="email" name="mail" id="mail" placeholder="diya@gmail.com" required>     
 <p>Select your interests (You can choose more than one):</p>
 
   <input type="checkbox" id="reading" name="interests[]" value="Reading">
@@ -57,6 +74,14 @@
 
  <input type="radio" name="gender" id="transgender" value="female">
  <label for="transgender">Transgender</label>
+          <label for="opinion">Your Feedback:</label> <br>
+<textarea name="opinion" id="opinion" placeholder="Write your thoughts(max. 500 letters)" maxlength="500" ></textarea>
+ <br><br>
+          <button type="submit">Submit</button>
      </form>
+     <p>Thank You For Your Valueable Time!!</p>
+     <footer>
+          <p>&copy all rights reserved <a href="https://www.linkedin.com/in/diya-dutta-463b25334/" target="_blank" rel="noopener noreferrer">Diya Dutta</a></p>
+     </footer>
 </body>
 </html>
